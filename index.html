@@ -12,18 +12,60 @@
     #medium {
       font-size:20
     }
+
+   .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
   </style>
 </head>
 <body>
-<h1 id="center">Work Showcase</h1>
-<br id="medium">Following are some of the projects I am most proud of</br>
-<p>
-<h2>Machine Learning</h2>
-<p>
-<h2>Games</h2>
-<p>
-<h2>Others</h2>
-<p>
+  <div class="sidenav">
+    <a href="coding.html">Coding Projects</a>
+    <a href="workexperience.html">Work Experience</a>
+    <a href="others.html">Others</a>
+  </div>
+  
+  <h1 id="center">Work Showcase</h1>
+  <br id="medium">Following is a display of some of my work: </br>
+  <p>
+  <h2>Coding Projects: </h2>
+  <p>
+  <h2>Work Experience: </h2>
+  <p>
+  <h2>Others: </h2>
+  <p>
 
 </body>
 </html>
