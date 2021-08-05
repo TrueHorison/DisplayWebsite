@@ -16,16 +16,29 @@
       background-color: #006E90;
       color: #FDFFFC;
     }
+    
+    .topnav {
+      padding: 50px 50px 100px 100px
+    }
 
-  @media screen {
-    .sidenav {padding: 50px 50px 1000px 1000px};
-    .sidenav a {font-size: 24px};
-  }
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav-right {
+        float: none;
+        display: block;
+      }
+
+      .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
 
   </style>
 </head>
 <body>
-  <div class="sidenav">
+  <div class="topnav">
     <a href="coding.html">Coding Projects</a>
     <a href="workexperience.html">Work Experience</a>
     <a href="others.html">Others</a>
